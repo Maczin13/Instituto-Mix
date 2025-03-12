@@ -1,0 +1,8 @@
+# Coletando dados do usuário
+nome = input("Digite seu nome: ")
+idade = int(input("Digite sua idade: "))
+altura = float(input("Digite sua altura (em metros): "))
+gosta_de_programacao = input("Você gosta de programação? (sim/não): ")
+
+# Exibindo resumo dos dados
+print(f"Olá, {nome}! Você tem {idade} anos, mede {altura}m de altura e {gosta_de_programacao} gosta de programação.")

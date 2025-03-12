@@ -1,0 +1,14 @@
+Enunciado
+Agora que você já sabe exibir mensagens na tela com Python, vamos dar um passo adiante! Sua missão é criar um programa que peça ao usuário dois números e exiba a soma deles.
+
+Regras
+O programa deve pedir ao usuário que insira dois números.
+O programa deve somar esses dois números.
+O programa deve exibir o resultado no formato: "A soma de X e Y é Z".
+Certifique-se de que os números sejam realmente somados e não apenas concatenados como texto.
+
+Dicas para o aluno
+Use a função input() para obter valores do usuário.
+Lembre-se de converter os valores para números com int() ou float(), pois input() retorna uma string.
+Use o operador + para somar os números.
+Para exibir o resultado, utilize print(), formatando corretamente a saída.

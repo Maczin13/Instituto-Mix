@@ -1,0 +1,19 @@
+Exercício 6 - Calculadora Modular
+Enunciado
+Agora que você aprendeu sobre funções e modularização, vamos organizar melhor o código! Crie um programa que implemente uma calculadora de operações básicas (adição, subtração, multiplicação e divisão) usando funções separadas para cada operação.
+
+Regras
+O programa deve ter quatro funções:
+soma(a, b): retorna a soma de a e b.
+subtracao(a, b): retorna a subtração de a e b.
+multiplicacao(a, b): retorna a multiplicação de a e b.
+divisao(a, b): retorna a divisão de a por b (tratando o caso de divisão por zero).
+O programa deve perguntar ao usuário qual operação ele deseja fazer e pedir dois números.
+Deve chamar a função correspondente e exibir o resultado.
+O programa deve rodar em um loop, permitindo que o usuário faça novas operações até escolher sair.
+
+Dicas para o aluno
+Use def para definir as funções e organize o código em seções.
+O while True pode ser usado para manter o programa rodando até que o usuário escolha sair.
+Utilize try e except para evitar erros de entrada do usuário (como divisão por zero ou entrada inválida).
+Utilize um dicionário de funções para simplificar a escolha da operação.

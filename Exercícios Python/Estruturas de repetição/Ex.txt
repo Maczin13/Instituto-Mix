@@ -1,0 +1,22 @@
+Exercício 5 - Tabuada Interativa
+Enunciado
+Agora que você aprendeu sobre laços de repetição, vamos praticar! Crie um programa que solicite um número ao usuário e exiba a tabuada desse número de 1 a 10.
+
+Regras
+O programa deve pedir um número inteiro ao usuário.
+Deve exibir a tabuada desse número no formato:
+
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+...
+5 x 10 = 50
+
+O programa deve utilizar um laço de repetição (for ou while) para calcular e exibir os resultados.
+Ao final, o programa deve perguntar se o usuário quer gerar outra tabuada. Se ele digitar "sim", o programa deve repetir; se digitar "não", o programa deve encerrar.
+
+Dicas para o aluno
+Use int(input()) para garantir que o número seja tratado como inteiro.
+Utilize um loop for para percorrer de 1 a 10.
+Use f-strings para formatar a saída de maneira clara.
+Para repetir o programa, utilize um loop while e peça ao usuário para continuar ou parar.

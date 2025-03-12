@@ -1,0 +1,21 @@
+Exercício 4 - Classificação de Idade
+Enunciado
+Agora que você aprendeu a usar if, elif e else, vamos testar seus conhecimentos! Crie um programa que peça a idade de uma pessoa e exiba uma mensagem informando a qual faixa etária ela pertence, seguindo as regras abaixo:
+
+0 a 12 anos → Criança
+13 a 17 anos → Adolescente
+18 a 59 anos → Adulto
+60 anos ou mais → Idoso
+
+Regras
+O programa deve solicitar a idade do usuário e armazená-la como um número inteiro.
+Deve usar estruturas condicionais (if, elif, else) para classificar a idade corretamente.
+Se a idade informada for negativa, o programa deve exibir uma mensagem de erro.
+O programa deve exibir a categoria correspondente no seguinte formato:
+
+Você tem [idade] anos e é classificado como [categoria].
+
+Dicas para o aluno
+Use int(input()) para converter a entrada do usuário em um número inteiro.
+Lembre-se de testar o caso de idade negativa antes das outras condições.
+As condições devem ser organizadas do menor para o maior valor para garantir que cada idade caia na faixa correta.

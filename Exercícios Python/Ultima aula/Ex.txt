@@ -1,0 +1,12 @@
+Exercício - Gerenciador de Contas Bancárias
+Objetivo
+Criar um sistema simples de gerenciamento de contas bancárias utilizando Programação Orientada a Objetos (POO) em Python. O sistema permitirá que usuários criem contas, realizem depósitos, saques e visualizem o saldo.
+
+Requisitos
+Criar uma classe ContaBancaria com:
+Atributos: titular, numero_conta, saldo
+Métodos: depositar(), sacar(), ver_saldo()
+Utilizar docstrings para documentar a classe e os métodos.
+Usar a biblioteca random para gerar números de conta automaticamente.
+Criar um menu interativo para que o usuário possa realizar operações.
+Garantir que o programa trate entradas inválidas e não permita saques superiores ao saldo.

@@ -1,0 +1,22 @@
+Exercício 7 - Sistema de Cadastro de Funcionários
+Enunciado
+Agora que você aprendeu sobre classes, objetos, atributos e métodos, vamos praticar! Crie um programa que simule um sistema de cadastro de funcionários usando POO.
+
+Regras
+Crie uma classe chamada Funcionario com os seguintes atributos:
+nome (string)
+idade (inteiro)
+salario (float)
+A classe deve ter um método exibir_informacoes() que exibe os dados do funcionário no formato:
+
+Nome: João Silva
+Idade: 30 anos
+Salário: R$ 3500.00
+No programa principal, permita que o usuário cadastre múltiplos funcionários e os exiba ao final.
+O programa deve rodar até que o usuário escolha sair.
+
+Dicas para o aluno
+Use a palavra-chave class para criar a classe Funcionario.
+O método __init__ é usado para inicializar os atributos do objeto.
+O while True pode ser usado para permitir o cadastro contínuo.
+Armazene os objetos em uma lista para gerenciar vários funcionários.

@@ -1,0 +1,17 @@
+Exercício 2 - Operações Matemáticas Básicas
+Enunciado
+Agora que você aprendeu sobre operadores matemáticos em Python, vamos praticá-los! Crie um programa que peça ao usuário dois números e exiba os resultados das seguintes operações entre eles:
+
+Soma (+)
+Subtração (-)
+Multiplicação (*)
+Divisão (/)
+Regras
+O programa deve solicitar dois números ao usuário.
+O programa deve calcular e exibir os resultados de soma, subtração, multiplicação e divisão.
+Caso a divisão envolva zero, o programa deve exibir uma mensagem adequada ao invés de tentar calcular.
+Dicas para o aluno
+Lembre-se de converter os valores do input() para números (float() ou int()).
+O operador / realiza a divisão normal e retorna um número decimal.
+Use if para evitar divisões por zero.
+Utilize print() para exibir os resultados formatados de forma clara.

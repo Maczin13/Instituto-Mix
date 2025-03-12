@@ -1,0 +1,51 @@
+# Definição das funções
+def soma(a, b):
+    return a + b
+
+def subtracao(a, b):
+    return a - b
+
+def multiplicacao(a, b):
+    return a * b
+
+def divisao(a, b):
+    if b == 0:
+        return "Erro! Divisão por zero."
+    return a / b
+
+# Dicionário de operações
+operacoes = {
+    "1": ("Soma", soma),
+    "2": ("Subtração", subtracao),
+    "3": ("Multiplicação", multiplicacao),
+    "4": ("Divisão", divisao)
+}
+
+# Loop principal do programa
+while True:
+    print("\n--- Calculadora Modular ---")
+    print("1 - Soma")
+    print("2 - Subtração")
+    print("3 - Multiplicação")
+    print("4 - Divisão")
+    print("5 - Sair")
+
+    escolha = input("Escolha a operação (1-5): ")
+
+    if escolha == "5":
+        print("Programa encerrado.")
+        break
+
+    if escolha in operacoes:
+        try:
+            num1 = float(input("Digite o primeiro número: "))
+            num2 = float(input("Digite o segundo número: "))
+
+            nome_operacao, funcao = operacoes[escolha]
+            resultado = funcao(num1, num2)
+
+            print(f"Resultado da {nome_operacao}: {resultado}")
+        except ValueError:
+            print("Erro! Digite valores numéricos válidos.")
+    else:
+        print("Opção inválida! Escolha entre 1 e 5.")

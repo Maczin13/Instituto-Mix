@@ -1,0 +1,23 @@
+Exercício 3 - Cadastro Simples
+Enunciado
+Agora que você aprendeu sobre variáveis e tipos de dados, vamos praticar! Crie um programa que solicite ao usuário as seguintes informações e, em seguida, exiba um resumo dos dados informados:
+
+Nome (texto)
+Idade (número inteiro)
+Altura (número decimal)
+Se gosta de programação (resposta "sim" ou "não")
+
+Regras
+O programa deve solicitar cada informação separadamente e armazená-la em variáveis adequadas.
+O nome deve ser armazenado como str, a idade como int, a altura como float e a resposta sobre programação como str.
+O programa deve exibir um resumo das informações no seguinte formato:
+
+Olá, [nome]! Você tem [idade] anos, mede [altura]m de altura e [resposta sobre programação] gosta de programação.
+
+A resposta sobre programação deve ser exibida corretamente, por exemplo: "sim gosta de programação" ou "não gosta de programação".
+
+Dicas para o aluno
+Use input() para capturar os dados do usuário.
+Utilize int() para converter a idade e float() para converter a altura.
+Como input() retorna sempre uma string, garanta que a resposta de "sim" ou "não" seja tratada corretamente na exibição.
+Use f-strings para formatar a saída de maneira clara.

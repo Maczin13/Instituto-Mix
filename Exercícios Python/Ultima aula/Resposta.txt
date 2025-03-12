@@ -1,0 +1,102 @@
+import random  # Biblioteca para gerar números aleatórios
+
+class ContaBancaria:
+    """
+    Classe que representa uma Conta Bancária.
+    
+    Atributos:
+        titular (str): Nome do titular da conta.
+        numero_conta (int): Número único da conta bancária.
+        saldo (float): Saldo atual da conta.
+    
+    Métodos:
+        depositar(valor): Adiciona um valor ao saldo da conta.
+        sacar(valor): Retira um valor do saldo da conta, se houver fundos suficientes.
+        ver_saldo(): Exibe o saldo disponível.
+    """
+
+    def __init__(self, titular):
+        """
+        Inicializa uma conta bancária com um titular e um número de conta gerado automaticamente.
+        
+        Args:
+            titular (str): Nome do titular da conta.
+        """
+        self.titular = titular
+        self.numero_conta = random.randint(10000, 99999)  # Gera um número de conta aleatório
+        self.saldo = 0.0  # Saldo inicial
+
+    def depositar(self, valor):
+        """
+        Deposita um valor na conta bancária.
+        
+        Args:
+            valor (float): Valor a ser depositado.
+        """
+        if valor > 0:
+            self.saldo += valor
+            print(f"Depósito de R$ {valor:.2f} realizado com sucesso!")
+        else:
+            print("O valor do depósito deve ser positivo.")
+
+    def sacar(self, valor):
+        """
+        Realiza um saque na conta, se houver saldo suficiente.
+        
+        Args:
+            valor (float): Valor a ser sacado.
+        """
+        if 0 < valor <= self.saldo:
+            self.saldo -= valor
+            print(f"Saque de R$ {valor:.2f} realizado com sucesso!")
+        elif valor > self.saldo:
+            print("Saldo insuficiente para realizar o saque.")
+        else:
+            print("O valor do saque deve ser positivo.")
+
+    def ver_saldo(self):
+        """Exibe o saldo atual da conta."""
+        print(f"Saldo atual: R$ {self.saldo:.2f}")
+
+
+# Programa principal
+contas = {}  # Dicionário para armazenar as contas bancárias
+
+while True:
+    print("\n--- Menu do Banco ---")
+    print("1 - Criar nova conta")
+    print("2 - Depositar")
+    print("3 - Sacar")
+    print("4 - Ver saldo")
+    print("5 - Sair")
+    
+    opcao = input("Escolha uma opção: ")
+    
+    if opcao == "1":
+        nome = input("Digite o nome do titular: ")
+        nova_conta = ContaBancaria(nome)
+        contas[nova_conta.numero_conta] = nova_conta
+        print(f"Conta criada com sucesso! Número da conta: {nova_conta.numero_conta}")
+    
+    elif opcao in ["2", "3", "4"]:
+        num_conta = int(input("Digite o número da conta: "))
+        conta = contas.get(num_conta)
+        
+        if conta:
+            if opcao == "2":
+                valor = float(input("Digite o valor do depósito: "))
+                conta.depositar(valor)
+            elif opcao == "3":
+                valor = float(input("Digite o valor do saque: "))
+                conta.sacar(valor)
+            elif opcao == "4":
+                conta.ver_saldo()
+        else:
+            print("Conta não encontrada. Verifique o número e tente novamente.")
+
+    elif opcao == "5":
+        print("Obrigado por usar nosso banco. Até mais!")
+        break
+
+    else:
+        print("Opção inválida! Escolha um número entre 1 e 5.")

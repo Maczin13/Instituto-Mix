@@ -1,0 +1,14 @@
+# Solicita a idade do usuário
+idade = int(input("Digite sua idade: "))
+
+# Verifica a faixa etária
+if idade < 0:
+    print("Erro: Idade inválida! Digite um número positivo.")
+elif idade <= 12:
+    print(f"Você tem {idade} anos e é classificado como Criança.")
+elif idade <= 17:
+    print(f"Você tem {idade} anos e é classificado como Adolescente.")
+elif idade <= 59:
+    print(f"Você tem {idade} anos e é classificado como Adulto.")
+else:
+    print(f"Você tem {idade} anos e é classificado como Idoso.")
