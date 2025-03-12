@@ -1,0 +1,1 @@
+These files are automators created for AutoHotkey. I use them for routine work, where there are several repetitive tasks. If you want, you can base yourself on my files and create your own automator, using the coordinates of your screen to automate your own repetitive tasks.
