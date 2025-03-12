@@ -1,1 +1,1 @@
-
+This repository refers to everything I created to assist in my work as a monitor of a computer lab at the Mix Institute of Santos Gonzaga. Feel free to analyze each file; it might be useful for those who manage multiple computers. I have automators for repetitive tasks, Python exercises for the Institute's students to practice, and Bats to automate some functions on the computers.
