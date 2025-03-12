@@ -1,8 +1,8 @@
 ﻿; Definindo as variáveis globais
 datainicio := "03/03/25"  ; Variável de data de início
 datafinal := "09/03/25"   ; Variável de data final
-User := "Mac13"  ; Variável para armazenar o usuário
-Senha := "@n4P@mela"  ; Variável para armazenar a senha
+User := "User"  ; Variável para armazenar o usuário
+Senha := "*******"  ; Variável para armazenar a senha
 
 F1::
 {
